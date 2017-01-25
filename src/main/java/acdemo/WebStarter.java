@@ -11,10 +11,10 @@ import com.google.inject.Singleton;
 import acdemo.api.ErrorApi;
 import acdemo.api.HelloApi;
 import acdemo.ui.HelloUI;
-import ackern.core.AppConfig;
-import ackern.core.error.KernError;
-import ackern.core.spark.SparkServer;
-import ackern.core.view.ApiError;
+import gspark.core.AppConfig;
+import gspark.core.error.KernError;
+import gspark.core.spark.SparkServer;
+import gspark.core.view.ApiError;
 
 @Singleton
 public class WebStarter {

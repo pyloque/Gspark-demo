@@ -4,9 +4,9 @@ import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
 
-import ackern.core.Holder;
-import ackern.core.background.Pander;
-import ackern.core.redis.RedisStore;
+import gspark.core.Holder;
+import gspark.core.background.Pander;
+import gspark.core.redis.RedisStore;
 
 @Singleton
 public class RedisPingPander extends Pander<String> {

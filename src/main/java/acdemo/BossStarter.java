@@ -7,8 +7,8 @@ import com.google.inject.Singleton;
 
 import acdemo.panders.redis.RedisPingPander;
 import acdemo.panders.redis.RedisPongPander;
-import ackern.core.AppConfig;
-import ackern.core.background.Boss;
+import gspark.core.AppConfig;
+import gspark.core.background.Boss;
 
 @Singleton
 public class BossStarter {

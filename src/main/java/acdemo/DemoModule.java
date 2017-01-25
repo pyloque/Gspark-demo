@@ -1,7 +1,7 @@
 package acdemo;
 
-import ackern.core.AppConfig;
-import ackern.core.GuiceModule;
+import gspark.core.AppConfig;
+import gspark.core.GuiceModule;
 
 public class DemoModule extends GuiceModule {
 

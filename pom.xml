@@ -63,7 +63,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>zhangyue</groupId>
-			<artifactId>ackern</artifactId>
+			<artifactId>gspark</artifactId>
 			<version>0.0.1</version>
 		</dependency>
 	</dependencies>

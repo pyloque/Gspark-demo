@@ -6,7 +6,7 @@ import java.util.Map;
 import com.alibaba.fastjson.JSON;
 import com.google.inject.Singleton;
 
-import ackern.core.view.ApiError;
+import gspark.core.view.ApiError;
 
 @Singleton
 public class ErrorApi {

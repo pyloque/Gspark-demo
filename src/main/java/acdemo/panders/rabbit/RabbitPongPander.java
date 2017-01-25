@@ -4,12 +4,12 @@ import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
 
-import ackern.core.background.Pander;
-import ackern.core.rabbitmq.ExchangeType;
-import ackern.core.rabbitmq.RabbitConsumer;
-import ackern.core.rabbitmq.RabbitDelivery;
-import ackern.core.rabbitmq.RabbitPublisher;
-import ackern.core.rabbitmq.RabbitStore;
+import gspark.core.background.Pander;
+import gspark.core.rabbitmq.ExchangeType;
+import gspark.core.rabbitmq.RabbitConsumer;
+import gspark.core.rabbitmq.RabbitDelivery;
+import gspark.core.rabbitmq.RabbitPublisher;
+import gspark.core.rabbitmq.RabbitStore;
 
 @Singleton
 public class RabbitPongPander extends Pander<RabbitDelivery> {
