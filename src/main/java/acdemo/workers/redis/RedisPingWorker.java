@@ -1,21 +1,21 @@
-package acdemo.panders.redis;
+package acdemo.workers.redis;
 
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
 
 import gspark.core.Holder;
-import gspark.core.background.Pander;
+import gspark.core.background.Worker;
 import gspark.core.redis.RedisStore;
 
 @Singleton
-public class RedisPingPander extends Pander<String> {
+public class RedisPingWorker extends Worker<String> {
 
 	@Inject
 	@Named("hello")
 	private RedisStore redis;
 
-	public RedisPingPander() {
+	public RedisPingWorker() {
 		super(5);
 	}
 

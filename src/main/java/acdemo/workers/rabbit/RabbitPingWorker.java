@@ -1,10 +1,10 @@
-package acdemo.panders.rabbit;
+package acdemo.workers.rabbit;
 
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
 
-import gspark.core.background.Pander;
+import gspark.core.background.Worker;
 import gspark.core.rabbitmq.ExchangeType;
 import gspark.core.rabbitmq.RabbitConsumer;
 import gspark.core.rabbitmq.RabbitDelivery;
@@ -12,13 +12,13 @@ import gspark.core.rabbitmq.RabbitPublisher;
 import gspark.core.rabbitmq.RabbitStore;
 
 @Singleton
-public class RabbitPingPander extends Pander<RabbitDelivery> {
+public class RabbitPingWorker extends Worker<RabbitDelivery> {
 
 	private final RabbitConsumer consumer;
 	private final RabbitPublisher publisher;
 
 	@Inject
-	public RabbitPingPander(@Named("hello") RabbitStore rabbit) {
+	public RabbitPingWorker(@Named("hello") RabbitStore rabbit) {
 		super(5);
 		consumer = new RabbitConsumer(rabbit);
 		publisher = new RabbitPublisher(rabbit);
